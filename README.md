@@ -15,4 +15,3 @@ As a user i want to be able to
 WIREFRAME:
 
 ![alt text](Wireframe/travel-rating.png)
-
