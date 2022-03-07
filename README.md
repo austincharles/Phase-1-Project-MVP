@@ -14,5 +14,5 @@ As a user i want to be able to
 
 WIREFRAME:
 
-![alt text](Wireframe/TravelPlaces.png)
+![alt text](Wireframe/travel-rating.png)
 
