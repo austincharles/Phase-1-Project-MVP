@@ -6,12 +6,11 @@ This is going to be an app with travel places that a user can add a comment to o
 
 USER STORIES:
 
-The users of this app will be able to submit information in order to generate a random photo. Once the photo is generated they can choose to like or dislike the photo.
+As a user i want to be able to 
 
-- [ x ] Users submit a caption
-- [ x ] Users choose a number between 1-7
-- [ x ] User submit the information via the "do something" button
-- [ x ] Photo generates and user chooses to "like" or "dislike"
+  [ x ] domContentLoaded alerts a welcome message to the screen, so I feel welcomed
+- [ x ] Users submit a caption, so i can say what I want about a photo
+- [ x ] Like a photo, so i can non-verbaly say I like the photo
 
 WIREFRAME:
 
