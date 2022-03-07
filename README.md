@@ -14,7 +14,5 @@ As a user i want to be able to
 
 WIREFRAME:
 
-in the images folder
-
-
+![alt text](Wireframe/travel-rating.png)
 
