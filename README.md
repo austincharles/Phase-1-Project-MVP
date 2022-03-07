@@ -1,8 +1,8 @@
-APP NAME: an app that will do something
+APP NAME: Travel Ratings
 
 PITCH: 
 
-In "an app that will do something" users will be greeted with the ambiguity of doing something and hence when something is done that thing will be did
+This is going to be an app with travel places that a user can add a comment to or like the location 
 
 USER STORIES:
 
