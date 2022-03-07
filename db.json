@@ -1,0 +1,40 @@
+{
+    "Destinations": [
+      {
+        "id": 1,
+        "name": "Fiji",
+        "image": "https://pbs.twimg.com/media/FL005_CXMAEzG8m?format=jpg&name=4096x4096",
+        "likes": 0
+      },
+      {
+        "id": 2,
+        "name": "Cancun",
+        "image": "https://www.worldatlas.com/upload/94/49/83/cancun-mexico-jdross75.jpg",
+        "likes": 0
+      },
+      {
+        "id": 3,
+        "name": "Playa del Carmen",
+        "image": "https://www.esl-languages.com/sites/default/files/styles/image_gallery/public/city/gallery/esl-Playa_Del_Carmen-language-stay-hero.jpg?itok=0TQdJERl",
+        "likes": 0
+      },
+      {
+        "id": 4,
+        "name": "Hawaii",
+        "image": "https://www.gannett-cdn.com/presto/2020/01/15/USAT/610d28ed-f048-4808-bbef-589bc5ef6cc6-Hawaii.jpg",
+        "likes": 0
+      },
+      {
+        "id": 5,
+        "name": "Dominican Republic",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/60d922a1563b55baa1570f06/Woman-gazing-at-the-sunrise-on-a-tropical-beach--Dominican-Republic/960x0.jpg?fit=bounds&format=jpg&width=960",
+        "likes": 0
+      },
+      {
+        "id": 6,
+        "name": "Jamaica",
+        "image": "https://static.onecms.io/wp-content/uploads/sites/28/2020/07/08/rockhouse-bungalow-clear-water-ROCKHOUSE0720.jpg",
+        "likes": 0
+      }
+    ]
+  }
