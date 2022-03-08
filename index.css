@@ -12,7 +12,7 @@
     margin-top: -0.57cm;
 }
 
-#Destination-form-container{
+#destination-form{
     text-align: center;
     background-color: lightblue;
     padding-top: .5cm;
@@ -20,11 +20,12 @@
     margin-top: -0.48cm;
 }
 
-/* .location-card:hover {
+.location-card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 26, 255);
   }
 
   .location-card {
+    background-color: lightblue;
     border: solid;
     border-color: #05e2ff;
     padding: 50px;
@@ -35,4 +36,15 @@
     text-align: center;
     width: 100px;
     height: 275px;
-  } */
+  }
+
+  #container-location {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+  }

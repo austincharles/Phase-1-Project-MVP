@@ -1,4 +1,6 @@
-// window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination") })
+window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination"); });
+// for( let i = 0; i < 1000000000; i++)
+// {}
 
 const locationContainer = document.getElementById("container-location");
 
@@ -50,7 +52,7 @@ function renderDestination(location) {
 
     locationCard.append(locationImage, locationName, locationLikes, likesNum);
     console.log(locationCard)
-    // locationContainer.append(locationCard)
+    locationContainer.append(locationCard)
     
 
 }
