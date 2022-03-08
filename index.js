@@ -1,14 +1,19 @@
-window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination") })
+// window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination") })
 
 const locationContainer = document.getElementById('location-container')
 
+
 fetch("http://localhost:3000/Destinations")
     .then(resp => resp.json())
-    .then(renderDestination)
+    .then(destinationsForEach)
 
-destinations.forEach(function (destinations) {
-  renderDestination(destinations)
-})
+    function destinationsForEach(destinations){
+        destinations.forEach(renderDestination)
+    }
+
+// destinations.forEach(function (destinations) {
+//   renderDestination(destinations)
+// })
 
 function renderDestination(location) {
     const locationCard = document.createElement('div')
@@ -34,5 +39,10 @@ function renderDestination(location) {
     likesButton.addEventListener("click", function(e) {
       ++destinations.likes
       likesNum.textContent = destinations.likes
+
+        locationCard.append(locationImage, locationName,
+            locationLikes, likesNum);
+            locationContainer.appendChild(locationCard);
+            return locationCard
     })
 }
