@@ -1,29 +1,24 @@
 window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination") })
 
-const URL = 'http://localhost:3000/Destinations'
 const locationContainer = document.getElementById('location-container')
 
-fetch(URL)
-    .then(resp => resp.json)
-    .then(renderDestination)
+fetch("http://localhost:3000/Destinations")
+    .then(resp => resp.json())
+    .then(renderDestination(location))
 
-destinations.forEach(function (location) {
-        renderDestination(location)
-    })
+function renderDestination(location) {
+    const locationCard = document.createElement('div')
+    locationCard.id = `location-card`;
+    locationCard.className = 'location-card';
 
-function renderDestination(destination) {
-    const destinationCard = document.createElement('div')
-    destinationCard.id = `destination-${destination.id}`;
-    destinationCard.className = 'destination-card';
-
-    const destinationImage = document.createElement('img')
-    destinationImage.src = destination.image
+    const locationImage = document.createElement('img')
+    locationImage.src = location.image
     
-    const destinationName = document.createElement('h3')
-    destinationName.textContent = destination.name;
+    const locationName = document.createElement('h3')
+    locationName.textContent = location.name;
 
-    const destinationLikes = document.createElement('h3')
-    destinationLikes.textContent = "Likes: "
+    const locationLikes = document.createElement('h3')
+    locationLikes.textContent = "Likes: "
 
     const likesNum = document.createElement('h5')
     likesNum.className = "likes-num"
@@ -31,9 +26,9 @@ function renderDestination(destination) {
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
-    likesButton.textContent = "♥"
+    likesButton.textContent = "✈"
     likesButton.addEventListener("click", function(e) {
-      ++destination.likes
-      likesNum.textContent = destination.likes
+      ++destinations.likes
+      likesNum.textContent = destinations.likes
     })
 }
