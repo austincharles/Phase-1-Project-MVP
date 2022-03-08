@@ -4,7 +4,11 @@ const locationContainer = document.getElementById('location-container')
 
 fetch("http://localhost:3000/Destinations")
     .then(resp => resp.json())
-    .then(renderDestination(location))
+    .then(renderDestination)
+
+destinations.forEach(function (destinations) {
+  renderDestination(destinations)
+})
 
 function renderDestination(location) {
     const locationCard = document.createElement('div')
@@ -22,7 +26,7 @@ function renderDestination(location) {
 
     const likesNum = document.createElement('h5')
     likesNum.className = "likes-num"
-    likesNum.textContent = destination.likesNum
+    likesNum.textContent = location.likesNum
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
