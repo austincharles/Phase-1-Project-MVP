@@ -1,13 +1,14 @@
 // window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome To Your Travel Destination") })
 
-const locationContainer = document.getElementById('location-container')
+const locationContainer = document.getElementById("container-location");
 
 
 fetch("http://localhost:3000/Destinations")
     .then(resp => resp.json())
-    .then(destinationsForEach)
+    .then(destinationSeperator)
 
-    function destinationsForEach(destinations){
+    function destinationSeperator(destinations){
+        // console.log(destinations)
         destinations.forEach(renderDestination)
     }
 
@@ -16,22 +17,28 @@ fetch("http://localhost:3000/Destinations")
 // })
 
 function renderDestination(location) {
+    // console.log(location)
     const locationCard = document.createElement('div')
     locationCard.id = `location-card`;
     locationCard.className = 'location-card';
+    // console.log(locationCard)
 
     const locationImage = document.createElement('img')
     locationImage.src = location.image
+    // console.log(locationImage)
     
     const locationName = document.createElement('h3')
     locationName.textContent = location.name;
+    // console.log(locationName)
 
     const locationLikes = document.createElement('h3')
     locationLikes.textContent = "Likes: "
+    // console.log(locationLikes)
 
     const likesNum = document.createElement('h5')
     likesNum.className = "likes-num"
     likesNum.textContent = location.likesNum
+    // console.log(likesNum)
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
@@ -39,10 +46,11 @@ function renderDestination(location) {
     likesButton.addEventListener("click", function(e) {
       ++destinations.likes
       likesNum.textContent = destinations.likes
+      })
 
-        locationCard.append(locationImage, locationName,
-            locationLikes, likesNum);
-            locationContainer.appendChild(locationCard);
-            return locationCard
-    })
+    locationCard.append(locationImage, locationName, locationLikes, likesNum);
+    console.log(locationCard)
+    // locationContainer.append(locationCard)
+    
+
 }

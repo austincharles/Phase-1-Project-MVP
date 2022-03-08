@@ -17,4 +17,4 @@ WIREFRAME:
 ![alt text](Wireframe/travel-rating.png)
 
 
-json server link: https://api.jsonbin.io/b/62269740a703bb6749247290
+json server link: http://localhost:3000/Destinations
