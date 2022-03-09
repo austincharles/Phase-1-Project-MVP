@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => { window.alert("Welcome T
 const locationContainer = document.getElementById("container-location");
 
 
+
 fetch("http://localhost:3000/Destinations")
     .then(resp => resp.json())
     .then(destinationSeperator)
@@ -39,7 +40,7 @@ function renderDestination(location) {
 
     const likesNum = document.createElement('h5')
     likesNum.className = "likes-num"
-    likesNum.textContent = location.likesNum
+    likesNum.textContent = location.likes
     console.log(location.likesNum)
     // console.log(likesNum)
 
@@ -47,13 +48,55 @@ function renderDestination(location) {
     likesButton.className = "likes-button"
     likesButton.textContent = "✈"
     likesButton.addEventListener("click", function(e) {
-      ++destinations.likes
-      likesNum.textContent = destinations.likes
+        e.stopPropagation
+      ++location.likes
+      likesNum.textContent = location.likes
       })
 
+    //   commentsForm(location);
     locationCard.append(locationImage, locationName, locationLikes, likesNum, likesButton);
     console.log(locationCard)
     locationContainer.append(locationCard)
-    
 
+    
+    
+    document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
+}
+
+// function commentsForm() {
+//     let form = document.createElement("form");
+//     form.id = "comment-form";
+  
+//     let commentInput = document.createElement("input");
+//     commentInput.type = "text";
+//     commentInput.id = "comment-input";
+  
+//     let label = document.createElement("label");
+//     label.className = "form-label";
+//     label.textContent = "Leave a comment: ";
+//     form.appendChild(label);
+  
+//     let submit = document.createElement("input");
+//     submit.type = "submit";
+//     submit.id = "submit";
+  
+//     form.append(commentInput, submit);
+  
+//     return form;
+//   }
+  
+
+function renderNewDestination(e){
+    e.preventDefault();
+    const name = document.querySelector("#name-input").value;
+    const img = document.querySelector("#img-input").value;
+  
+    let newDestination = {
+      name: name,
+      image: img,
+      likes: 0,
+    };
+
+    renderDestination(newDestination)
+   document.getElementById('destination-form').reset()
 }

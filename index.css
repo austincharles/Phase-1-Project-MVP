@@ -19,7 +19,13 @@
     padding-bottom: .5cm;
     margin-top: -0.48cm;
 }
-
+/* #comment-form{
+  text-align: center;
+  background-color: lightblue;
+  padding-top: .5cm;
+  padding-bottom: .5cm;
+  margin-top: -0.48cm;
+} */
 .location-card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 26, 255);
   }
@@ -45,6 +51,7 @@
   }
   
   img {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
+   
   }
