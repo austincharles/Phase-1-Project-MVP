@@ -46,7 +46,7 @@ function renderDestination(location) {
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
-    likesButton.textContent = "like"
+    likesButton.textContent = "✈"
     likesButton.addEventListener("click", function(e) {
         e.stopPropagation
       ++location.likes
