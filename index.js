@@ -40,6 +40,7 @@ function renderDestination(location) {
     const likesNum = document.createElement('h5')
     likesNum.className = "likes-num"
     likesNum.textContent = location.likesNum
+    console.log(location.likesNum)
     // console.log(likesNum)
 
     const likesButton = document.createElement('button')
@@ -50,7 +51,7 @@ function renderDestination(location) {
       likesNum.textContent = destinations.likes
       })
 
-    locationCard.append(locationImage, locationName, locationLikes, likesNum);
+    locationCard.append(locationImage, locationName, locationLikes, likesNum, likesButton);
     console.log(locationCard)
     locationContainer.append(locationCard)
     
