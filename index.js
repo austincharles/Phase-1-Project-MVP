@@ -48,10 +48,7 @@ function renderDestination(location) {
     likesButton.className = "likes-button"
     likesButton.textContent = "like"
     likesButton.addEventListener("click", function(e) {
-<<<<<<< HEAD
         e.stopPropagation
-=======
->>>>>>> a33fef5c6e2781d7bd8355938ddc4b17b774f4a4
       ++location.likes
       likesNum.textContent = location.likes
       })
