@@ -45,10 +45,10 @@ function renderDestination(location) {
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
-    likesButton.textContent = "✈"
+    likesButton.textContent = "like"
     likesButton.addEventListener("click", function(e) {
-      ++destinations.likes
-      likesNum.textContent = destinations.likes
+      ++location.likes
+      likesNum.textContent = location.likes
       })
 
     locationCard.append(locationImage, locationName, locationLikes, likesNum, likesButton);
