@@ -30,25 +30,25 @@ function renderDestination(location) {
     locationImage.src = location.image
     // console.log(locationImage)
     
-    const locationName = document.createElement('h3')
+    const locationName = document.createElement('h2')
     locationName.textContent = location.name;
     // console.log(locationName)
 
-    const locationLikes = document.createElement('h3')
+    const locationLikes = document.createElement('h4')
     locationLikes.textContent = "Likes: "
     // console.log(locationLikes)
 
-    const likesNum = document.createElement('h5')
+    const likesNum = document.createElement('h3')
     likesNum.className = "likes-num"
     likesNum.textContent = location.likes
-    console.log(location.likesNum)
+    // console.log(location.likesNum)
     // console.log(likesNum)
 
     const likesButton = document.createElement('button')
     likesButton.className = "likes-button"
-    likesButton.textContent = "✈"
+    likesButton.textContent = "♥"
     likesButton.addEventListener("click", function(e) {
-        e.stopPropagation
+        e.stopPropagation();
       ++location.likes
       likesNum.textContent = location.likes
       })

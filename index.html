@@ -4,14 +4,14 @@
 <head>
   <title>Travel Destination</title>
   <link rel="stylesheet" href="index.css">
-  
+
 </head>
 
 <body>
   <div id="titleAndBackground">
     <style>
       body {
-        background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg);
+        background-image: url('Wireframe/Untitled design.png');
       }
     </style>
     <h1 id="travelTitle">Welcome to Travel Ratings</h1>
@@ -20,7 +20,7 @@
 
   <div id="Destination-form-container">
     <form id="destination-form">
-      <label class="form-label"><strong>Name: </strong></label>
+      <label class="form-label"><strong>Location: </strong></label>
       <input type="text" id="name-input" />
 
       <label class="form-label"><strong>Image: </strong></label>
@@ -29,7 +29,11 @@
       <input type="submit" value="Submit" />
     </form>
   </div>
-
+  <div hidden class="likes-section">
+    <span id="like-count" class="likes">0 likes</span>
+    <button id="like-button" class="like-button">♥</button>
+  
+  </div>
   <!-- <div id="comment-form-container">
     <form id="comment-form">
       <label class="form-label"><strong>Comment: </strong></label>
@@ -39,7 +43,7 @@
   </div> -->
 
   <div id="container-location"> </div>
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

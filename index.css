@@ -1,23 +1,26 @@
 #travelTitle{
     text-size-adjust: 45px;
     text-align: center;
-    color: rgba(128, 128, 128, 0.541);
-    background-color: white;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 #subtitle{
     text-align: center;
-    color: rgba(128, 128, 128, 0.541);
-    background-color: white;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin-top: -0.57cm;
 }
 
 #destination-form{
     text-align: center;
-    background-color: lightblue;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
     padding-top: .5cm;
     padding-bottom: .5cm;
-    margin-top: -0.48cm;
+    margin-top: 1cm;
 }
 /* #comment-form{
   text-align: center;
@@ -27,21 +30,24 @@
   margin-top: -0.48cm;
 } */
 .location-card:hover {
-    box-shadow: 0 8px 16px 0 rgb(0, 26, 255);
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
   }
 
   .location-card {
-    background-color: lightblue;
-    border: solid;
-    border-color: #05e2ff;
-    padding: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: auto;
+    overflow: hidden;
+    border-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
     margin: 30px;
     float: left;
     text-align: center;
-    width: 100px;
-    height: 275px;
+    font-family: sans-serif;
+    width: fit-content;
+    height: fit-content;
   }
 
   #container-location {
@@ -51,7 +57,11 @@
   }
   
   img {
-    height: 100px;
-    width: 100px;
-   
+    height: 250px;
+    width: 250px;
+   border-radius: 50%;
+  }
+
+  body {
+    background-color: #63aeeb;
   }
